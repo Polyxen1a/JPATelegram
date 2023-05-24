@@ -21,12 +21,14 @@ public class StartHandler extends AbstractMessagingHandler {
         if (update.message().text() != null && update.message().text().equals("/start")) {
             weight += 2;
         }
+        return weight;
+    }
 
         @Override
-        public void handleUpdate(Update update) {
+        public void handleUpdate (Update update) {
             telegramBot.execute(
                     new SendMessage(
                             update.message().chat().id(), "Привет " + update.message().from().firstName()));
-        }
+
     }
 }
