@@ -2,14 +2,15 @@ package pro.sky.jpatelegram;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@EnableSheduling
+@EnableScheduling
 
-public class JpaTelegramApplication {
+public class TelegramBotApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JpaTelegramApplication.class, args);
+        SpringApplication.run(TelegramBotApplication.class, args);
     }
 
 }
